@@ -1,1 +1,1 @@
-Sitemap: https://mmistakes.github.io/intro2sd-guillermo-martin-lorenzo-alu0101128931/sitemap.xml
+Sitemap: https://mmistakes.github.io/intro2sd-template/sitemap.xml
