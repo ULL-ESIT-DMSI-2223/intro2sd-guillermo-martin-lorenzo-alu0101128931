@@ -308,7 +308,11 @@
 
       <section class="page__content" itemprop="text">
         
-        <p>&lt;script type=”“text/javascript””&gt;
+        <div id="cat">
+    <img src="https://cdn2.thecatapi.com/images/cvi.jpg" />
+</div>
+
+<p>&lt;script type=”“text/javascript””&gt;
   /*
   https://docs.thecatapi.com/ 
 */
@@ -318,7 +322,7 @@ const URL = ‘https://api.thecatapi.com/v1/images/search?size=full’;</p>
   try {</p>
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>// CAT 
-let divTitle = document.getElementById("comment-cat");
+//let divTitle = document.getElementById("comment-cat");
 
 let divcat = document.getElementById("cat");
 let response = await fetch(URL, {
