@@ -308,56 +308,75 @@
 
       <section class="page__content" itemprop="text">
         
-        <div id="comment-cat"></div>
+        <div>
+<style>
+img, #quote, #comment-cat {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+#author {
+  float: right;
+}
+</style>
+
+
+<div id="comment-cat"></div>
 
 <div id="cat"></div>
 
-<p><br /></p>
+<br />
 <div id="quote"></div>
 <div id="author"></div>
+
 
 <div id="cat">
     <img src="https://cdn2.thecatapi.com/images/cvi.jpg" />
 </div>
 
-<p>&lt;script type=”“text/javascript””&gt;
+ 
+&lt;script type=""text/javascript""&gt;
   /*
   https://docs.thecatapi.com/ 
 */
-const URL = ‘https://api.thecatapi.com/v1/images/search?size=full’;</p>
+const URL = 'https://api.thecatapi.com/v1/images/search?size=full';
 
-<p>(async function() {
-  try {</p>
+(async function() {
+  try {
+    
+    // CAT 
+    //let divTitle = document.getElementById("comment-cat");
+    
+    let divcat = document.getElementById("cat");
+    let response = await fetch(URL, {
+       headers: {
+       'x-api-key': "56a4f1cc-7f60-468d-9dba-e4b6f04b7c7d"
+       }
+    });
+    let cat = await response.json();
+    // console.log(cat);   
+    let img = document.createElement("img");
+    let title = document.createElement("h2");
+    title.innerText = "Consuélate con un gatito";   
+    divTitle.append(title);
+    img.src = cat[0].url;
+    divcat.appendChild(img);   
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>// CAT 
-//let divTitle = document.getElementById("comment-cat");
-
-let divcat = document.getElementById("cat");
-let response = await fetch(URL, {
-   headers: {
-   'x-api-key': "56a4f1cc-7f60-468d-9dba-e4b6f04b7c7d"
-   }
-});
-let cat = await response.json();
-// console.log(cat);   
-let img = document.createElement("img");
-let title = document.createElement("h2");
-title.innerText = "Consuélate con un gatito";   
-divTitle.append(title);
-img.src = cat[0].url;
-divcat.appendChild(img);   
-
-// QUOTE
-const quoteDiv = document.getElementById("quote");
-const authorDiv = document.getElementById("author");
-
-const quoteRes = await fetch('https://api.quotable.io/random');
-const data = await quoteRes.json();
-quoteDiv.innerHTML = `&lt;h2&gt;${data.content}&lt;/h2&gt;`;
-authorDiv.innerHTML = `&lt;h3&gt;—${data.author}&lt;/h3&gt;`;   }   catch(e) { 
-console.log(e);   } })(); &lt;/script&gt;
-</code></pre></div></div>
-<p>&lt;/div&gt;</p>
+    // QUOTE
+    const quoteDiv = document.getElementById("quote");
+    const authorDiv = document.getElementById("author");
+    
+    const quoteRes = await fetch('https://api.quotable.io/random');
+    const data = await quoteRes.json();
+    quoteDiv.innerHTML = `<h2>${data.content}</h2>`;
+    authorDiv.innerHTML = `<h3>—${data.author}</h3>`;
+  }
+  catch(e) { 
+    console.log(e);
+  }
+})();
+&lt;/script&gt;
+</div>
 
         
       </section>
