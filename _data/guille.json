@@ -1,10 +1,11 @@
 {
-
-    "nombre": "Guillermo",
-    "apellido": "Martin",
-    "edad": 23,
-    "sexo": "M",
-    "telefono": "646509428",
-    "email": "alu0101128931@ull.edu.es",
-    "deportes": ["futbol", "tenis", "baloncesto", "padel"]
+    "descripcion": {
+        "nombre": "Guillermo",
+        "apellido": "Martin",
+        "edad": 23,
+        "sexo": "M",
+        "telefono": "646509428",
+        "email": "alu0101128931@ull.edu.es",
+        "deportes": ["futbol", "tenis", "baloncesto", "padel"]
+    }   
 }
