@@ -9,8 +9,8 @@
   <head>
     <meta charset="utf-8">
 
-<!-- begin _includes/seo.html --><title>Systems development - Introducción al Desarrollo de Sistemas</title>
-<meta name="description" content="WHAT IS SYSTEMS DEVELOPMENT?">
+<!-- begin _includes/seo.html --><title>Search - Introducción al Desarrollo de Sistemas</title>
+<meta name="description" content="A flexible Jekyll theme for your blog or site with a minimalist aesthetic.">
 
 
   <meta name="author" content="Guillermo Martin">
@@ -20,11 +20,11 @@
 <meta property="og:type" content="website">
 <meta property="og:locale" content="en_US">
 <meta property="og:site_name" content="Introducción al Desarrollo de Sistemas">
-<meta property="og:title" content="Systems development">
-<meta property="og:url" content="https://mmistakes.github.io/intro2sd-guillermo-martin-lorenzo-alu0101128931/resumenes/systems-development/">
+<meta property="og:title" content="Search">
+<meta property="og:url" content="https://mmistakes.github.io/intro2sd-guillermo-martin-lorenzo-alu0101128931/search/">
 
 
-  <meta property="og:description" content="WHAT IS SYSTEMS DEVELOPMENT?">
+  <meta property="og:description" content="A flexible Jekyll theme for your blog or site with a minimalist aesthetic.">
 
 
 
@@ -33,9 +33,9 @@
 
 
   <meta name="twitter:site" content="@Gmartin">
-  <meta name="twitter:title" content="Systems development">
-  <meta name="twitter:description" content="WHAT IS SYSTEMS DEVELOPMENT?">
-  <meta name="twitter:url" content="https://mmistakes.github.io/intro2sd-guillermo-martin-lorenzo-alu0101128931/resumenes/systems-development/">
+  <meta name="twitter:title" content="Search">
+  <meta name="twitter:description" content="A flexible Jekyll theme for your blog or site with a minimalist aesthetic.">
+  <meta name="twitter:url" content="https://mmistakes.github.io/intro2sd-guillermo-martin-lorenzo-alu0101128931/search/">
 
   
     <meta name="twitter:card" content="summary">
@@ -57,7 +57,7 @@
   
 
 
-<link rel="canonical" href="https://mmistakes.github.io/intro2sd-guillermo-martin-lorenzo-alu0101128931/resumenes/systems-development/">
+<link rel="canonical" href="https://mmistakes.github.io/intro2sd-guillermo-martin-lorenzo-alu0101128931/search/">
 
 
 
@@ -111,7 +111,7 @@
 
   </head>
 
-  <body class="layout--single">
+  <body class="layout--default">
     <nav class="skip-links">
   <ul>
     <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
@@ -165,216 +165,35 @@
 
     <div class="initial-content">
       
+<h1>Search</h1>
 
-
-
-<div id="main" role="main">
+<form id="search-form" action="">
+  <label class="label" for="search">Search term (accepts a regex):</label>
+  <br />
+  <input class="input" id="search" type="text" name="search" autofocus="" placeholder="e.g. Promise" autocomplete="off" />
   
-  <div class="sidebar sticky">
+  <ul class="list  list--results" id="list">
+  </ul>
+</form>
+
+<script type="text/javascript" src="/intro2sd-guillermo-martin-lorenzo-alu0101128931//assets/src/fetch.js"></script>
+
+<script type="text/javascript" src="/intro2sd-guillermo-martin-lorenzo-alu0101128931//assets/src/search.js"></script>
+
+<script type="text/javascript">
+
+  const search = new JekyllSearch(
+    '/intro2sd-guillermo-martin-lorenzo-alu0101128931//assets/src/search.json',
+    '#search',
+    '#list',
+    '/intro2sd-guillermo-martin-lorenzo-alu0101128931/'
+  );
+  search.init(); 
   
+</script>
 
+<noscript>Please enable JavaScript to use the search form.</noscript>
 
-<div itemscope itemtype="https://schema.org/Person">
-
-  
-    <div class="author__avatar">
-      
-        <img src="/intro2sd-guillermo-martin-lorenzo-alu0101128931/assets/images/perfil.jpeg" alt="Guillermo Martin" itemprop="image">
-      
-    </div>
-  
-
-  <div class="author__content">
-    
-      <h3 class="author__name" itemprop="name">Guillermo Martin</h3>
-    
-    
-      <div class="author__bio" itemprop="description">
-        <p>A Student</p>
-
-      </div>
-    
-  </div>
-
-  <div class="author__urls-wrapper">
-    <button class="btn btn--inverse">Follow</button>
-    <ul class="author__urls social-icons">
-      
-        <li itemprop="homeLocation" itemscope itemtype="https://schema.org/Place">
-          <i class="fas fa-fw fa-map-marker-alt" aria-hidden="true"></i> <span itemprop="name">Islas Canarias</span>
-        </li>
-      
-
-      
-        
-          
-            <li><a href="https://mademistakes.com" rel="nofollow noopener noreferrer"><i class="fas fa-fw fa-link" aria-hidden="true"></i><span class="label">Made Mistakes</span></a></li>
-          
-        
-          
-            <li><a href="https://twitter.com/mmistakes" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-twitter-square" aria-hidden="true"></i><span class="label">Twitter</span></a></li>
-          
-        
-          
-            <li><a href="https://github.com/mmistakes" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i><span class="label">GitHub</span></a></li>
-          
-        
-          
-            <li><a href="https://instagram.com/mmistakes" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-instagram" aria-hidden="true"></i><span class="label">Instagram</span></a></li>
-          
-        
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-
-      <!--
-  <li>
-    <a href="http://link-to-whatever-social-network.com/user/" itemprop="sameAs" rel="nofollow noopener noreferrer">
-      <i class="fas fa-fw" aria-hidden="true"></i> Custom Social Profile Link
-    </a>
-  </li>
--->
-    </ul>
-  </div>
-</div>
-
-  
-  </div>
-
-
-
-  <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
-    <meta itemprop="headline" content="Systems development">
-    <meta itemprop="description" content="WHAT IS SYSTEMS DEVELOPMENT?">
-    
-    
-
-    <div class="page__inner-wrap">
-      
-        <header>
-          <h1 id="page-title" class="page__title" itemprop="headline">Systems development
-</h1>
-          
-
-
-        </header>
-      
-
-      <section class="page__content" itemprop="text">
-        
-        <h2 id="what-is-systems-development">WHAT IS SYSTEMS DEVELOPMENT?</h2>
-
-<p>Systems development is the process of taking a set of business requirements and, 
-through a series of structured stages, translating these into an operational IT system</p>
-
-<h2 id="systems-development-and-other-disciplines">SYSTEMS DEVELOPMENT AND OTHER DISCIPLINES</h2>
-
-<ol>
-  <li>Project management</li>
-  <li>Business analysis</li>
-  <li>Systems architectureAllow cookies to cool</li>
-  <li>Programming</li>
-  <li>Testing</li>
-  <li>Quality control and quiality assurance</li>
-  <li>Service management</li>
-</ol>
-
-<h2 id="offshoring-and-outsourcing-of-systems-development">OFFSHORING AND OUTSOURCING OF SYSTEMS DEVELOPMENT</h2>
-
-<ol>
-  <li><strong>Offshoring</strong> is the practice of moving a business process to a different country, usually to a country where labour is cheaper. Offshoring is often used to refer to the practice of moving IT development to a different country.</li>
-  <li><strong>Outsourcing</strong> is the practice of contracting out a business process to a third party. Outsourcing is often used to refer to the practice of contracting out IT development to a third party.</li>
-</ol>
-
-        
-      </section>
-
-      <footer class="page__meta">
-        
-        
-
-
-        
-
-
-      </footer>
-
-      <section class="page__share">
-  
-
-  <a href="https://twitter.com/intent/tweet?via=Gmartin&text=Systems+development%20https%3A%2F%2Fmmistakes.github.io%2Fintro2sd-guillermo-martin-lorenzo-alu0101128931%2Fresumenes%2Fsystems-development%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
-
-  <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fmmistakes.github.io%2Fintro2sd-guillermo-martin-lorenzo-alu0101128931%2Fresumenes%2Fsystems-development%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
-
-  <a href="https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fmmistakes.github.io%2Fintro2sd-guillermo-martin-lorenzo-alu0101128931%2Fresumenes%2Fsystems-development%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
-</section>
-
-
-      
-  <nav class="pagination">
-    
-      <a href="/intro2sd-guillermo-martin-lorenzo-alu0101128931/resumenes/bitcoin/" class="pagination--pager" title="Bitcoin
-">Previous</a>
-    
-    
-      <a href="#" class="pagination--pager disabled">Next</a>
-    
-  </nav>
-
-    </div>
-
-    
-  </article>
-
-  
-  
-</div>
 
       <div align="center" style="margin: 1em 0;">
         <ins class="adsbygoogle"
@@ -495,8 +314,6 @@ $(document).ready(function () {
   });
 });
 </script>
-
-
 
 
 
